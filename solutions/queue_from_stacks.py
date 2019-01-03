@@ -2,13 +2,19 @@ from test_framework import generic_test
 
 
 class Queue:
+    def __init__(self):
+        self.enq , self.deq = [], []
     def enqueue(self, x):
-        # TODO - you fill in here.
-        return
+        self.enq.append(x)
 
+    @property
     def dequeue(self):
-        # TODO - you fill in here.
-        return 0
+        if not self.deq:
+            while self.enq:
+                self.deq.append(self.enq.pop())
+        if not self.deq:
+            print('Empty queue')
+        return self.deq.pop()
 
 
 def queue_tester(ops):
@@ -23,7 +29,7 @@ def queue_tester(ops):
             elif op == 'enqueue':
                 q.enqueue(arg)
             elif op == 'dequeue':
-                result = q.dequeue()
+                result = q.dequeue
                 if result != arg:
                     raise TestFailure("Dequeue: expected " + str(arg) +
                                       ", got " + str(result))
