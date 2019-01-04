@@ -3,21 +3,30 @@ from test_framework.test_failure import TestFailure
 
 
 class Queue:
+    scale_factor = 2
     def __init__(self, capacity):
-        # TODO - you fill in here.
-        return
+        self.circular_queue = [None]*capacity
+        self.rear, self.front, self.num_ele_in_queue = 0, 0, 0
 
     def enqueue(self, x):
-        # TODO - you fill in here.
-        return
+        if (self.rear + 1) % len(self.circular_queue) == self.front:
+            self.circular_queue = (self.circular_queue[self.front:]+self.circular_queue[:self.front])
+            self.front, self.rear = 0, self.num_ele_in_queue
+            self.circular_queue += [None]*(len(self.circular_queue)*Queue.scale_factor-len(self.circular_queue))
+        self.circular_queue[self.rear] = x
+        self.rear = (self.rear + 1) % len(self.circular_queue)
+        self.num_ele_in_queue+=1
 
     def dequeue(self):
-        # TODO - you fill in here.
-        return 0
+        if not self.num_ele_in_queue:
+            raise IndexError('empty queue')
+        self.num_ele_in_queue-=1
+        ret = self.circular_queue[self.front]
+        self.front = (self.front + 1) % len(self.circular_queue)
+        return ret
 
     def size(self):
-        # TODO - you fill in here.
-        return 0
+        return self.num_ele_in_queue
 
 
 def queue_tester(ops):

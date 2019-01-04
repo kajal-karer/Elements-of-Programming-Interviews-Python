@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681e59ab-37e8-4149-a35f-6d1bc35edbf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-tests.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/queue_from_stacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/queue_from_stacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/circular_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/circular_queue.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +21,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="23" />
-          <entry key="py" value="228" />
+          <entry key="py" value="706" />
           <entry key="sh" value="12" />
         </counts>
       </usages-collector>
@@ -32,13 +29,13 @@
         <counts>
           <entry key="Markdown" value="23" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="228" />
+          <entry key="Python" value="706" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="2" />
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -46,7 +43,7 @@
         <counts>
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -65,14 +62,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="144">
+              <first_editor relative-caret-position="35">
                 <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/solutions/circular_queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1546633981536" expanded="true" signature="302:690" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +103,7 @@
         <option value="$PROJECT_DIR$/run-tests.sh" />
         <option value="$PROJECT_DIR$/solutions/queue_from_stacks.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/solutions/circular_queue.py" />
       </list>
     </option>
   </component>
@@ -113,6 +124,11 @@
             <path>
               <item name="Elements-of-Programming-Interviews-Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elements-of-Programming-Interviews-Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elements-of-Programming-Interviews-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elements-of-Programming-Interviews-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="solutions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,10 +251,21 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="144">
+          <first_editor relative-caret-position="35">
             <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solutions/circular_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1546633981536" expanded="true" signature="302:690" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
