@@ -1,10 +1,17 @@
 from test_framework import generic_test
 
-
-def evaluate(expression):
-    # TODO - you fill in here.
-    return 0
-
+import operator
+def evaluate(tokens):
+    lookup = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.truediv}
+    stack = []
+    delimiter = ','
+    for token in tokens.split(delimiter):
+        if token not in lookup:
+            stack.append(int(token))
+        else:
+            y, x = stack.pop(), stack.pop()
+            stack.append(int(lookup[token](x, y)))
+    return stack[-1]
 
 if __name__ == '__main__':
     exit(
