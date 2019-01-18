@@ -58,7 +58,7 @@
     - [ ] [ Bootcamp: Linked Lists ]( /solutions/search\_in\_list.py )
     - [ ] [ Bootcamp: Linked Lists ]( /solutions/insert\_in\_list.py )
     - [ ] [ Bootcamp: Linked Lists ]( /solutions/delete\_from\_list.py )
-    - [ ] [ Merge two sorted lists ]( /solutions/sorted\_lists\_merge.py )
+    - [x] [ Merge two sorted lists ]( /solutions/sorted\_lists\_merge.py )
     - [ ] [ Reverse a single sublist ]( /solutions/reverse\_sublist.py )
     - [ ] [ Test for cyclicity ]( /solutions/is\_list\_cyclic.py )
     - [ ] [ Test for overlapping lists - lists are cycle-free ]( /solutions/do\_terminated\_lists\_overlap.py )
