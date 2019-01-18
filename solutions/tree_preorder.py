@@ -2,8 +2,13 @@ from test_framework import generic_test
 
 
 def preorder_traversal(tree):
-    # TODO - you fill in here.
-    return []
+    stack, res = [tree], []
+    while stack:
+        curr = stack.pop()
+        if curr:
+            res.append(curr.data)
+            stack.extend([curr.right, curr.left])
+    return res
 
 
 if __name__ == '__main__':
