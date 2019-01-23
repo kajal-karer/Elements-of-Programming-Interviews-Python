@@ -181,9 +181,9 @@
     - [ ] [ The pretty printing problem ]( /solutions/pretty\_printing.py )
     - [ ] [ Find the longest nondecreasing subsequence ]( /solutions/longest\_nondecreasing\_subsequence.py )
 - [ ] Chapter 18: Greedy Algorithms and Invariants
-    - [ ] [ Compute an optimum assignment of tasks ]( /solutions/task\_pairing.py )
-    - [ ] [ Schedule to minimize waiting time ]( /solutions/minimum\_waiting\_time.py )
-    - [ ] [ The interval covering problem ]( /solutions/minimum\_points\_covering\_intervals.py )
+    - [x] [ Compute an optimum assignment of tasks ]( /solutions/task\_pairing.py )
+    - [x] [ Schedule to minimize waiting time ]( /solutions/minimum\_waiting\_time.py )
+    - [x] [ The interval covering problem ]( /solutions/minimum\_points\_covering\_intervals.py )
     - [ ] [ The interval covering problem ]( /solutions/two\_sum.py )
     - [ ] [ The 3-sum problem ]( /solutions/three\_sum.py )
     - [ ] [ Find the majority element ]( /solutions/majority\_element.py )

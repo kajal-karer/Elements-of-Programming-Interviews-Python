@@ -3,13 +3,20 @@ import functools
 
 from test_framework import generic_test
 from test_framework.test_utils import enable_executor_hook
+import operator
 
 Interval = collections.namedtuple('Interval', ('left', 'right'))
 
 
 def find_minimum_visits(intervals):
-    # TODO - you fill in here.
-    return 0
+    intervals.sort(key=operator.attrgetter('right'))
+    num_visit = 0
+    last_interval_visit = float('-inf')
+    for interval in intervals:
+        if interval.left > last_interval_visit:
+            last_interval_visit = interval.right
+            num_visit += 1
+    return num_visit
 
 
 @enable_executor_hook
